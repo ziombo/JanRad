@@ -184,7 +184,7 @@ h2{
     right: 0;
 	bottom:0;
 	float: left;
-	background: url("/img/writingBackground.jpg");
+	background: url("../img/writingBackground.jpg");
     background-position: center right;
 	box-shadow: inset 0 0 0 1000px rgba(30,50,60,.9);
 	z-index: 5;

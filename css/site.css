@@ -184,7 +184,7 @@ h2{
     right: 0;
 	bottom:0;
 	float: left;
-	background: url("../img/writingBackground.jpg");
+	background: url("/img/writingBackground.jpg");
     background-position: center right;
 	box-shadow: inset 0 0 0 1000px rgba(30,50,60,.9);
 	z-index: 5;
@@ -494,6 +494,7 @@ div{
 		font-size: 20px;
 	}
 }
+<<<<<<< HEAD
 @media screen and (max-width: 375px) {
 	.centered{
 		width:275px;
@@ -509,3 +510,5 @@ div{
 		width: 32px;
 	}
 }
+=======
+>>>>>>> a1362d59188daf7198ad28aa0d44cee0c9b5b7ed

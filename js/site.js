@@ -1,5 +1,14 @@
 ﻿(function () {
 
+	var pattern = Trianglify({
+		height: 1200, //so that there is no need to run the function whenever the screen is resided (unless heigh>1200)
+		width: 350,
+		x_colors: ['#222832', '#234873', '#192939', '#262656'],
+		y_colors: "match_x",
+		cell_size: 34
+	});
+	document.getElementById("trianglify").appendChild(pattern.canvas());
+
 	$("#areaStretch").flexible();
 
 	var mobileViewportWidth = window.matchMedia("screen and (min-width: 1024px)");
@@ -15,7 +24,6 @@
 		if (mq.matches && window.matchMedia("screen and (min-height: 660px)").matches) {
 			// width >= 1024px
 			scrollEnabled = false;
-			console.log("height git");
 		} else {
 			scrollEnabled = true;
 		}
@@ -89,12 +97,10 @@
 			//dla mniejszych ekranow, sprawdzanie czy jest na samym dole/gorze strony. na potem
 			if (event.deltaY < 0 && $(".current").scrollTop() + $(".current").height() >= pageHeight) {
 				//bottom of page and scrolling down
-				console.log(scrollCounter);
 				scrollCounter--;
 			}
 			else if (event.deltaY > 0 && $(".current").scrollTop() == 0) {
 				//top of page and scrolling up
-				console.log(scrollCounter);
 				scrollCounter++;
 			}
 			if (scrollCounter == -5) {

@@ -3,8 +3,8 @@
 	margin: 0;
 	background: #5b5b5b;
 	font-family: 'Titillium Web', sans-serif;
-	overflow: hidden;
 	color: #e8e9d9;
+	text-align: center;
 }
 h1{
 	margin-top: 50px;
@@ -21,7 +21,8 @@ h2{
 }
 #navbar{
 	z-index: 100;
-	position: fixed;
+	position: absolute;
+	left:0;
 	text-align: center;
 	float:left;
 }
@@ -56,10 +57,6 @@ h2{
     transform: scale(0.8);
   }
 }
-/* visited link */
-#navbar ul li a:visited{
-	color: #FFD700;
-} 
 /* mouse over link */
 #navbar ul li a:hover{
 	-webkit-transform: scale(1.1);	  
@@ -107,16 +104,15 @@ h2{
 
 #aboutPage{
 	color: #e8e9d9;
-	position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-	bottom:0;	
-	background-image: linear-gradient(#234873 ,#0e7585  650px, #C8C8D7);
-	z-index: 15;
+	height: auto;
+    min-height: 100%;	
+	position:relative;
 	font-size: 20px;
-	overflow: auto;
-	background-position: center;
+	overflow: hidden;
+	background-color: #2f4f4f;
+	background-image: url("../img/rocket.jpg");
+	background-position: bottom;
+    box-shadow: inset 0 0 0 1000px rgba(30,50,60,.1);
 }
 #technologies-known{
 	margin-top:25px;
@@ -143,6 +139,7 @@ h2{
 	border-top: 5px double #0f1340;
 	padding-top: 10px;
 	margin: 0 auto;
+	display:none;
 }
 #quicklinks a{
 	display: inline-block;
@@ -153,13 +150,8 @@ h2{
 }
 #projectsPage {
 	color: #e8e9d9;
-	position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-	bottom:0;
-	padding-bottom: 25px;
-	background: #1A3742;
+	padding-bottom: 100px;
+	background: #03141f;
 	background-image: url("../img/backgroundProjects.png");
 	background-position: center;
 	z-index: 5;
@@ -173,11 +165,6 @@ h2{
 }
 #contactPage{
 	width:100%;
-	position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-	bottom:0;
 	float: left;
 	background: url("../img/writingBackground.jpg");
     background-position: center right;
@@ -193,9 +180,13 @@ h2{
 	width: 60%;
 	margin-left: 20%;
 	margin-right: 20%;
-	margin-top: 150px;
+	margin-top: 50px;
 	margin-bottom: 50px;
 	float:left;
+}
+#the-form{
+	border: 2px solid black;
+	border-radius: 13px;
 }
 #send-outcome{
 	display: block;
@@ -265,6 +256,7 @@ h2{
 	background-color: #9AAAB3;
 	color: black;
 	cursor: pointer;
+	border-left: 2px solid black;
 }
 #send:hover{
 	box-shadow: #4e7585 0 0 50px;
@@ -303,6 +295,7 @@ div{
 .page-contents{
 	width: 100%;
 	margin-top: 70px;
+	float: left;
 }
 .centered{
 	width: 500px;
@@ -332,7 +325,7 @@ div{
 .inside{
 	width: 100%;
 	height: 100%;
-	background-color: rgba(31, 37, 42, 0.8);
+	background-color: rgba(31, 37, 42, 0.78);
 }
 .translate-50{
 		transform: translateY(50%);

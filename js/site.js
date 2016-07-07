@@ -1,14 +1,5 @@
 ﻿(function () {
 
-	var pattern = Trianglify({
-		height: 1200, //so that there is no need to run the function whenever the screen is resided (unless heigh>1200)
-		width: 350,
-		x_colors: ['#222832', '#234873', '#192939', '#262656'],
-		y_colors: "match_x",
-		cell_size: 34
-	});
-	document.getElementById("trianglify").appendChild(pattern.canvas());
-
 	$("#areaStretch").flexible();
 
 	var mobileViewportWidth = window.matchMedia("screen and (min-width: 1024px)");

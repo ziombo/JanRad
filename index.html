@@ -15,193 +15,200 @@
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 </head>
 <body>
-
-	<div id="pageFull">
+	<div id="aboutPage">
 		<div id="navbar">
-			<div id="navbarContent">
-				<img src="img/face2.jpg" alt="Profile pic JR" />
-				<ul>
-					<li class="last-clicked"><a id="aboutpage">About Me</a></li>
-					<li><a id="projectspage">Projects</a></li>
-					<li><a id="contactpage">Contact</a></li>
-				</ul>
-			</div>
-			<div id="trianglify"></div>
+			<ul>
+				<li><a href="#aboutPage">About Me</a></li>
+				<li><a href="#projectsPage">Projects</a></li>
+				<li><a href="#contactPage">Contact</a></li>
+			</ul>
 		</div>
-		<div id="pageContent">
-			
-			<div id="aboutPage" class="1 current">
-				<h1>JanRad.me</h1>
-				<div class="page-contents">
-					<div class="centered">			
-						<p>Hi there! My name is John and I'm a self-taught, aspiring programmer.
-						I still haven't found my niche so currently I'm trying to grasp as much
-						knowledge as possible.</p>						
-						<div id="technologies-known">
-							<p>I hold experience in following technologies:</p>
+		<h1>JanRad.me</h1>
+		<div class="page-contents">
+			<div class="centered">
+				<p>
+					Hi there! My name is John and I'm a self-taught, aspiring programmer.
+					I still haven't found my niche so currently I'm trying to grasp as much
+					knowledge as possible.
+				</p>
+				<div id="technologies-known">
+					<p>I hold experience in following technologies:</p>
+					<div>
+						<div id="lang">
 							<p>C#</p>
 							<div class="skills-depth">
-								<p>- .NET</p>
-								<p>- ASP.NET</p>
-								<p>- Entity Framework</p>
-								<p>- SignalR</p>
+								<p>.NET</p>
+								<p>ASP.NET</p>
+								<p>Entity Framework</p>
+								<p>SignalR</p>
 							</div>
+						</div>
+						<div id="lang">
 							<p>SQL</p>
 							<div class="skills-depth">
-								<p>- T-SQL</p>
-								<p>- MS SQL</p>
-								<p>- SQLite</p>				
+								<p>T-SQL</p>
+								<p>MS SQL</p>
+								<p>SQLite</p>
 							</div>
-							<p>HTML/5</p>
-							<p>CSS/3</p>
+						</div>
+						<div id="lang">
 							<p>JavaScript</p>
 							<div class="skills-depth">
-								<p>- AJAX</p>
-								<p>- jQuery</p>
-								<p>- AngularJS</p>
+								<p>AJAX</p>
+								<p>jQuery</p>
+								<p>AngularJS</p>
 							</div>
 						</div>
-						<div id="quicklinks">
-							<a href="#" class="enlarge"><img src="img/resumeIco.png" height="64" width="64" /></a>
-							<a href="mailto:jasiu@360.st" class="enlarge"><img src="img/email.png" title="Email" width="64" height="64"></a>
+						<div id="lang">
+							<p>HTML/5</p>
 						</div>
-						
+						<div id="lang">
+							<p>CSS/3</p>
+						</div>
 					</div>
-				</div>
-			</div>
-			<!--
-		-->
-			<div id="projectsPage" class="2 behind">
-				<h1>Projects</h1>
-				<div class="page-contents">
-					<div class="row">
-						<div class="st-item">
-							<div class="inside">
-								<img class="enlarge" src="img/HCChat.png" />
-								<div class="project-description">
-									<h2>HearthChat</h2>
-									<p>HearthChat allows HearthStone player to communicate during ongoing game.</p>
-									<div class="technologies">
-										<span>C#</span>
-										<span>.NET</span>
-										<span>Winforms</span>
-										<span>SignalR</span>
-									</div>
-									<div class="sourceIcons">
-										<a id="sourceRef"  href="https://github.com/ziombo/HearthChat" style="display:inline-block;">
-											<img class="no-hover" src="img/GitHub-Mark-Light-64px.png" style="height: 64px; width: 64px; display:inline-block" />
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="nd-item">
-							<div class="inside full-width">														
-								<a href="img/codeTogether.png" data-lightbox="image-1" data-title="CodeTogether">
-									<img class="no-hover translate-50" src="img/codeTogether.png" />
-								</a>
-								<img class="show-small" src="img/codeTogether.png" />
 
-								<div class="project-description">
-									<h2>CodeTogether</h2>
-									<p>CodeTogether allows You to code with another person in real time! You see his code and he sees Yours!</p>
-									<div class="technologies">
-										<span>C#</span>
-										<span>ASP.NET WebPages</span>
-										<span>Razor Syntax</span>
-										<span>SignalR</span>
-										<span>Bootstrap 3</span>
-										<span>jQuery</span>
-									</div>
-									<div class="sourceIcons">
-										<a id="sourceRef"  href="https://github.com/ziombo/codetogether" style="display:inline-block;">
-											<img class="no-hover" src="img/GitHub-Mark-Light-64px.png" style="height: 64px; width: 64px; display:inline-block" />
-										</a>
-									</div>
-								</div>
+				</div>
+				<div id="quicklinks">
+					<a href="#" class="enlarge"><img src="img/resumeIco.png" height="64" width="64" /></a>
+					<a href="mailto:jasiu@360.st" class="enlarge"><img src="img/email.png" title="Email" width="64" height="64"></a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--
+	-->
+	<div id="projectsPage">
+		<h1>Projects</h1>
+		<div class="page-contents">
+			<div class="row">
+				<div class="st-item">
+					<div class="inside">
+						<a href="img/HCChat.png" data-lightbox="image-1" data-title="HearthChat">
+							<img class="no-hover" src="img/HCChat.png" />
+						</a>
+						<div class="project-description">
+							<h2>HearthChat</h2>
+							<p>HearthChat allows HearthStone player to communicate during ongoing game.</p>
+							<div class="technologies">
+								<span>C#</span>
+								<span>.NET</span>
+								<span>Winforms</span>
+								<span>SignalR</span>
+							</div>
+							<div class="sourceIcons">
+								<a id="sourceRef" href="https://github.com/ziombo/HearthChat" style="display:inline-block;">
+									<img class="no-hover" src="img/GitHub-Mark-Light-64px.png" style="height: 64px; width: 64px; display:inline-block" />
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="st-item">
-							<div class="inside full-width">
-								<a href="img/kis.png" data-lightbox="image-2" data-title="KeepItSolved">
-									<img class="no-hover translate-50" src="img/kis.png" />
-								</a>
-								<img class="show-small" src="img/kis.png" />
-								<div class="project-description">
-									<h2>KeepItSolved</h2>
-									<p>KeepItSolved is a place to keep all your questions and answers.</p>
-									<div class="technologies">
-										<span>C#</span>
-										<span>ASP.NET MVC</span>
-										<span>Entity Framework</span>
-										<span>AngularJS</span>
-										<span>Bootstrap 3</span>
-										<span>jQuery</span>
-									</div>
-									<div class="sourceIcons">
-										<a id="sourceRef"  href="https://github.com/ziombo/KISDNU" style="display:inline-block;">
-											<img class="no-hover" src="img/GitHub-Mark-Light-64px.png" style="height: 64px; width: 64px; display:inline-block" />
-										</a>
-									</div>
-								</div>
+				</div>
+				<div class="nd-item">
+					<div class="inside full-width">
+						<a href="img/codeTogether.png" data-lightbox="image-1" data-title="CodeTogether">
+							<img class="no-hover translate-50" src="img/codeTogether.png" />
+						</a>
+						<img class="show-small" src="img/codeTogether.png" />
+
+						<div class="project-description">
+							<h2>CodeTogether</h2>
+							<p>CodeTogether allows You to code with another person in real time! You see his code and he sees Yours!</p>
+							<div class="technologies">
+								<span>C#</span>
+								<span>ASP.NET WebPages</span>
+								<span>Razor Syntax</span>
+								<span>SignalR</span>
+								<span>Bootstrap 3</span>
+								<span>jQuery</span>
 							</div>
-						</div>
-						<div class="nd-item">
-							<div class="inside full-width">
-								<a href="img/sjp.png" data-lightbox="image-3" data-title="SJPChecker">
-									<img class="no-hover translate-300" src="img/sjp.png" />
+							<div class="sourceIcons">
+								<a id="sourceRef" href="https://github.com/ziombo/codetogether" style="display:inline-block;">
+									<img class="no-hover" src="img/GitHub-Mark-Light-64px.png" style="height: 64px; width: 64px; display:inline-block" />
 								</a>
-								<img class="show-small" src="img/sjp.png" />
-								<div class="project-description">
-									<h2>SJPChecker</h2>
-									<p>Simple and created for my personal use, small program that allows user to check a word in Polish online dictionary (sjp.pl) by pressing assigned hotkey and writting query into textbox.</p>
-									<div class="technologies">
-										<span>C#</span>
-										<span>Winforms</span>
-										<span>Web Scraping</span>
-									</div>
-									<div class="sourceIcons">
-										<a id="sourceRef" href="https://github.com/ziombo/SJPCheck" style="display:inline-block;">
-											<img class="no-hover"  src="img/GitHub-Mark-Light-64px.png" style="height: 64px; width: 64px; display:inline-block" />
-										</a>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!--
-		-->
-			<div id="contactPage" class="3 behind">
-				<div class="page-contents">
-					<h2>Feel free to contact me through this form or at <a id="atEmail" href="mailto:jasiu@360.st">jasiu@360.st</a></h2>
-					<div id="contactForm">
-						<form id="contact-form" action="https://formspree.io/jasiu@360.st" method="POST">
-							<span id="send-outcome"></span>
-							<div class="msg-part">
-								<span id="from">From:</span>
-								<input class="email" type="email" name="_replyto" required>
+			<div class="row">
+				<div class="st-item">
+					<div class="inside full-width">
+						<a href="img/kis.png" data-lightbox="image-2" data-title="KeepItSolved">
+							<img class="no-hover translate-50" src="img/kis.png" />
+						</a>
+						<img class="show-small" src="img/kis.png" />
+						<div class="project-description">
+							<h2>KeepItSolved</h2>
+							<p>KeepItSolved is a place to keep all your questions and answers.</p>
+							<div class="technologies">
+								<span>C#</span>
+								<span>ASP.NET MVC</span>
+								<span>Entity Framework</span>
+								<span>AngularJS</span>
+								<span>Bootstrap 3</span>
+								<span>jQuery</span>
 							</div>
-							<div class="msg-part">
-								<span id="msg">Message:</span>
-								<textarea id="areaStretch" class="email" type="text" name="name" rows="3" required></textarea>
+							<div class="sourceIcons">
+								<a id="sourceRef" href="https://github.com/ziombo/KISDNU" style="display:inline-block;">
+									<img class="no-hover" src="img/GitHub-Mark-Light-64px.png" style="height: 64px; width: 64px; display:inline-block" />
+								</a>
 							</div>
-							<button id="send" type="submit" value="Send"><img src="https://maxcdn.icons8.com/windows8/PNG/64/Data/export-64.png" title="Export" width="64"></button>
-						</form>
+						</div>
+					</div>
+				</div>
+				<div class="nd-item">
+					<div class="inside full-width">
+						<a href="img/sjp.png" data-lightbox="image-3" data-title="SJPChecker">
+							<img class="no-hover translate-300" src="img/sjp.png" />
+						</a>
+						<img class="show-small" src="img/sjp.png" />
+						<div class="project-description">
+							<h2>SJPChecker</h2>
+							<p>Simple and created for my personal use, small program that allows user to check a word in Polish online dictionary (sjp.pl) by pressing assigned hotkey and writting query into textbox.</p>
+							<div class="technologies">
+								<span>C#</span>
+								<span>Winforms</span>
+								<span>Web Scraping</span>
+							</div>
+							<div class="sourceIcons">
+								<a id="sourceRef" href="https://github.com/ziombo/SJPCheck" style="display:inline-block;">
+									<img class="no-hover" src="img/GitHub-Mark-Light-64px.png" style="height: 64px; width: 64px; display:inline-block" />
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!--
+	-->
+	<div id="contactPage">
+		<div class="page-contents">
+			<h2>Feel free to contact me through this form or at <a id="atEmail" href="mailto:jasiu@360.st">jasiu@360.st</a></h2>
+			<div id="contactForm">
+				<form id="contact-form" action="https://formspree.io/jasiu@360.st" method="POST">
+					<span id="send-outcome"></span>
+					<div id="the-form">
+						<div class="msg-part">
+							<span id="from">From:</span>
+							<input class="email" type="email" name="_replyto" placeholder="Who@John.Doe" required>
+						</div>
+						<div class="msg-part">
+							<div id="msg"><p>Message:</p></div>
+							<textarea id="areaStretch" class="email" type="text" name="name" rows="3" placeholder="Your message goes here..." required></textarea>
+						</div>
+						<button id="send" type="submit" value="Send"><img src="https://maxcdn.icons8.com/windows8/PNG/64/Data/export-64.png" title="Export" width="64"></button>
+					</div>
 
+				</form>
+			</div>
+		</div>
+	</div>
 
 
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
 	<script src="js/lightbox.min.js"></script>
 	<script src="js/flexibleArea.js"></script>
 	<script src="js/site.js"></script>

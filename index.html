@@ -16,13 +16,11 @@
 </head>
 <body>
 	<div id="aboutPage">
-		<div id="navbar">
-			<ul>
-				<li><a href="#aboutPage">About Me</a></li>
-				<li><a href="#projectsPage">Projects</a></li>
-				<li><a href="#contactPage">Contact</a></li>
-			</ul>
-		</div>
+		<ul id="navbar">
+			<li><a href="#aboutPage">About Me</a></li>
+			<li><a href="#projectsPage">Projects</a></li>
+			<li><a href="#contactPage">Contact</a></li>
+		</ul>
 		<h1>JanRad.me</h1>
 		<div class="page-contents">
 			<div class="centered">
@@ -34,7 +32,7 @@
 				<div id="technologies-known">
 					<p>I hold experience in following technologies:</p>
 					<div>
-						<div id="lang">
+						<div class="lang">
 							<p>C#</p>
 							<div class="skills-depth">
 								<p>.NET</p>
@@ -43,7 +41,7 @@
 								<p>SignalR</p>
 							</div>
 						</div>
-						<div id="lang">
+						<div class="lang">
 							<p>SQL</p>
 							<div class="skills-depth">
 								<p>T-SQL</p>
@@ -51,7 +49,13 @@
 								<p>SQLite</p>
 							</div>
 						</div>
-						<div id="lang">
+						<div class="lang">
+							<p>Version Control</p>
+							<div class="skills-depth">
+								<p>Github</p>
+							</div>
+						</div>
+						<div class="lang">
 							<p>JavaScript</p>
 							<div class="skills-depth">
 								<p>AJAX</p>
@@ -59,10 +63,10 @@
 								<p>AngularJS</p>
 							</div>
 						</div>
-						<div id="lang">
+						<div class="lang">
 							<p>HTML/5</p>
 						</div>
-						<div id="lang">
+						<div class="lang">
 							<p>CSS/3</p>
 						</div>
 					</div>
@@ -83,8 +87,8 @@
 		<div class="page-contents">
 			<div class="row">
 				<div class="st-item">
-					<div class="inside">
-						<a href="img/HCChat.png" data-lightbox="image-1" data-title="HearthChat">
+					<div class="inside full-width">
+						<a id="hc"  href="img/HCChat.png" data-lightbox="image-1" data-title="HearthChat">
 							<img class="no-hover" src="img/HCChat.png" />
 						</a>
 						<div class="project-description">
@@ -106,10 +110,10 @@
 				</div>
 				<div class="nd-item">
 					<div class="inside full-width">
-						<a href="img/codeTogether.png" data-lightbox="image-1" data-title="CodeTogether">
-							<img class="no-hover translate-50" src="img/codeTogether.png" />
+						<a href="img/CodeTogether2.png" data-lightbox="image-1" data-title="CodeTogether">
+							<img class="no-hover translate-50" src="img/CodeTogether2.png" />
 						</a>
-						<img class="show-small" src="img/codeTogether.png" />
+						<img class="show-small" src="img/CodeTogether2.png" />
 
 						<div class="project-description">
 							<h2>CodeTogether</h2>
@@ -185,25 +189,24 @@
 	<!--
 	-->
 	<div id="contactPage">
+		<h1>Contact</h1>
 		<div class="page-contents">
-			<h2>Feel free to contact me through this form or at <a id="atEmail" href="mailto:jasiu@360.st">jasiu@360.st</a></h2>
-			<div id="contactForm">
+			<div id="contact-links">
+				<h3>Feel free to contact me in whatever way suits You.</h3>
+				<a href="skype:jj.radlowski?chat"><img class="contacts hvr-wobble-skew" src="img/skypeIco2.png" /></a>
+				<a href="mailto:jasiu@360.st"><img class="contacts hvr-wobble-skew" src="img/Email-96.png" /></a>
+			</div>
+			<div id="form">
 				<form id="contact-form" action="https://formspree.io/jasiu@360.st" method="POST">
+					<input type="email" name="_replyto" placeholder="Your Email" required>
+					<textarea type="text" name="name" cols="5" rows="5" placeholder="Your message" required></textarea>	
+					<!--<input id="submit" type="submit" value="Send">-->
+					<button id="submit" type="submit">Send</button>
 					<span id="send-outcome"></span>
-					<div id="the-form">
-						<div class="msg-part">
-							<span id="from">From:</span>
-							<input class="email" type="email" name="_replyto" placeholder="Who@John.Doe" required>
-						</div>
-						<div class="msg-part">
-							<div id="msg"><p>Message:</p></div>
-							<textarea id="areaStretch" class="email" type="text" name="name" rows="3" placeholder="Your message goes here..." required></textarea>
-						</div>
-						<button id="send" type="submit" value="Send"><img src="https://maxcdn.icons8.com/windows8/PNG/64/Data/export-64.png" title="Export" width="64"></button>
-					</div>
-
 				</form>
 			</div>
+
+
 		</div>
 	</div>
 

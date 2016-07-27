@@ -4,41 +4,40 @@
 	background: #5b5b5b;
 	font-family: 'Titillium Web', sans-serif;
 	color: #e8e9d9;
-	text-align: center;
 }
 h1{
-	margin-top: 50px;
+	margin-top: 40px;
 	font-size: 60px;
 }
 h2{
 	margin-top: 15px;
 	font-size: 30px;
 }
+h3{
+	font-size: 22px;
+	margin-bottom: 5%;
+}
 
 #pageFull{
 	width:100%;
 	height: 100%;
 }
-#navbar{
-	z-index: 100;
-	position: absolute;
-	left:0;
-	text-align: center;
-	float:left;
-}
-#navbar ul{
-	list-style-type:none;
-	margin-top: 50%;
+ul{
+	position: fixed;
+	margin-top: 100px;
+	background: rgba(150,200,250,0.5);
+    border-radius: 0 10px 10px 0;
+	border: 1px solid black;
 }
 .last-clicked{
 	box-shadow: 0px 0px 5px 3px #e8e9d9;
 }
-#navbar ul li{
+ul li{
 	font-size: 40px;
 	margin: 15px 0;
 	padding: 0 15px;
 }
-#navbar ul li a{
+ul li a{
 	color: #e8e9d9;
 	text-decoration: none;
 	display: block;
@@ -58,7 +57,7 @@ h2{
   }
 }
 /* mouse over link */
-#navbar ul li a:hover{
+ul li a:hover{
 	-webkit-transform: scale(1.1);	  
 	transform: scale(1.1);	  
 	padding-right: -80px;	  
@@ -70,7 +69,7 @@ h2{
 	 cursor: pointer;
 }
  /* selected link */
-#navbar ul li a:active{
+ul li a:active{
 	-webkit-animation-name: hvr-push;
 	animation-name: hvr-push;  
 	-webkit-animation-duration: 0.3s;  
@@ -113,15 +112,16 @@ h2{
 	background-image: url("../img/rocket.jpg");
 	background-position: bottom;
     box-shadow: inset 0 0 0 1000px rgba(30,50,60,.1);
+	text-align: center;
 }
 #technologies-known{
 	margin-top:25px;
 	margin-bottom: 100px;
 }
-#lang{
+.lang{
 	margin-bottom: 15px;
 }
-#lang > p{
+.lang > p{
 	font-size: 30px;
 	margin-left: 45%;
 	text-align: left;
@@ -149,13 +149,14 @@ h2{
 	cursor: pointer;
 }
 #projectsPage {
+	height: 100%;
 	color: #e8e9d9;
-	padding-bottom: 100px;
 	background: #03141f;
 	background-image: url("../img/backgroundProjects.png");
 	background-position: center;
 	z-index: 5;
 	overflow: auto;
+	text-align: center;
 }
 .sourceIcons{
 	position: absolute;
@@ -166,117 +167,19 @@ h2{
 #contactPage{
 	width:100%;
 	float: left;
-	background: url("../img/writingBackground.jpg");
-    background-position: center right;
-	box-shadow: inset 0 0 0 1000px rgba(30,50,60,.9);
-	z-index: 5;
+	background: url(../img/Gray-plain-website-background.jpg);
+	text-align: center;
 }
 #contactPage h2{
 	width: 60%;
 	margin: 0 auto;
 	font-size: 45px;
 }
-#contactForm{
-	width: 60%;
-	margin-left: 20%;
-	margin-right: 20%;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	float:left;
-}
-#the-form{
-	border: 2px solid black;
-	border-radius: 13px;
-}
 #send-outcome{
 	display: block;
 	font-size: 20px;
 	height: 20px;
 	margin-bottom: 10px;
-}
-.msg-part{
-	width: 80%;
-	position: relative;
-	font-size: 35px;
-	display: inline-block;
-	float: left;
-	color: black;
-}
-.msg-part *:not(span){
-	width: 100%;
-	border: none;
-	font-size: 35px;
-	border-radius: 13px 0 0 13px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-}
-#areaStretch{
-	display:block;
-}
-.email, #areaStretch{
-	background-color: #EDEFEF;
-}
-.msg-part:not(:first-of-type){
-	border-top: 1px solid black;
-}
-.email{
-	padding-left: 170px;
-}
-.email:focus{
-	outline: 0;
-}
-#from{
-	height: 42px; 
-	width: 160px;
-	position:absolute; 
-	top: 0px; 
-	left: 0px; 
-	background-color: #9AAAB3;
-	border-radius: 13px 0 0 0;
-}
-#msg{
-	height:100%;
-	width: 160px;
-	position:absolute; 
-	background-color: #9AAAB3;
-	border-radius: 0 0 0 13px;
-}
-#msg p{
-	position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-#send{
-	height:170px;
-	width: 20%;
-	font-size: 35px;
-	display: inline-block;
-	border: none;
-	border-radius: 0 13px 13px 0;
-	background-color: #9AAAB3;
-	color: black;
-	cursor: pointer;
-	border-left: 2px solid black;
-}
-#send:hover{
-	box-shadow: #4e7585 0 0 50px;
-}
-#send:focus{
-	outline: 0;
-}
-#atEmail{
-	text-decoration: none;
-	color: #D4C89F;
-	border-bottom: 1px dotted transparent;
-}
-#atEmail:hover{
-	border-bottom-color: #D4C89F;
-}
-#trianglify{
-	height: 100%;
-	width:100%;
-	position: absolute;
-	top:0;
 }
 .box-rotate {
   -webkit-animation: spinAndZoom 1s 1;
@@ -294,7 +197,8 @@ div{
 
 .page-contents{
 	width: 100%;
-	margin-top: 70px;
+	margin-top: 40px;
+	margin-bottom: 50px;
 	float: left;
 }
 .centered{
@@ -302,8 +206,8 @@ div{
 	display: inline-block;
 }
 .row{
-	float: left;
-	width:100%;
+	width: 80%;
+	margin: 0 auto;
 }
 .st-item, .nd-item{
 	height: 330px;
@@ -341,7 +245,7 @@ div{
 	display:inline-block;
 }
 .enlarge:hover{
-		-webkit-animation-name: inside-img-show;
+	-webkit-animation-name: inside-img-show;
 	animation-name: inside-img-show;
 	-webkit-animation-duration: 0.3s;
 	animation-duration: 0.3s;
@@ -392,7 +296,6 @@ div{
 	100%{
 		transform: rotate(0);
 	}
-
 }
 #sourceRef:hover{
 	-webkit-animation-name: shake;
@@ -407,6 +310,123 @@ div{
 .to-scroll{
 	float: left;
 }
+.testclass{
+	transform: translateX(-190px); 
+	padding-right:50px;
+}
+.testclass:hover{
+	transform: translateX(0px);
+	padding-right: 0;
+}
+#contact-form{
+	display:inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+#contact-form *{
+	display: block;
+	width: 450px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-size: 25px;
+}
+#submit{
+	position: relative;
+	border: none;
+    color: white;
+    height: 50px;
+    font-weight: 700;
+    cursor: pointer;
+	overflow: hidden;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.5);
+    background: linear-gradient(#6cc55a 0,#317d1c 100%);
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s
+}
+#submit:after {
+    content: "";
+    background: #6cde4f;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+#submit:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+#form, #contact-links{
+	min-width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+#form{
+	float: left;
+	margin-left: 10%;
+}
+#contact-links{
+	height: 300px;
+	margin-right: 10%;
+}
+.contacts:hover{
+	cursor: pointer;
+	-webkit-animation-name: wobble-skew;
+	animation-name: wobble-skew;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+  	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+.contacts{
+	margin: 0 20px;
+	vertical-align: middle;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+@keyframes wobble-skew {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+
 @media screen and (max-width: 1024px), screen and (max-height: 660px) {
     #navbar{
 		display: none;
@@ -434,20 +454,32 @@ div{
 	}
 
 }
-@media screen and (max-width: 1024px){
-	#contactForm{
-		width: 94%;
-		margin-left: 3%;
-		margin-right: 3%;
-		margin-top: 50px;
+@media screen and (max-width: 1250px){
+	#form{
+		float:none;
+		margin-left: 0;
+		display: block;
 	}
+	#contact-form{
+		width: 90%;
+	}
+	#contact-form *{
+		margin: 0 auto;
+	}
+	#contact-links{
+		margin-right: 0;
+		display: block;
+		height: 250px;
+	}
+}
+@media screen and (max-width: 1024px){
 	#contactPage h2{
 		font-size: 25px;
 		width: 100%;
 	}
 }
 @media screen and (max-width: 640px){
-	.full-width a:first-child{
+	.full-width a:first-child:not(#hc){
 		display: none;
 	}
 	.show-small{
@@ -484,13 +516,25 @@ div{
 		width: 100%;
 		font-size: 20px;
 	}
+	.skills-depth{
+		margin-left: 200px;
+	}
+	#contact-form *{
+		width: 90%;
+		margin: 0 auto;
+	}
 }
 @media screen and (max-width: 375px) {
 	.centered{
 		width:275px;
 	}
+	.lang > p{
+		margin: 0 auto;
+		text-align: center;
+	}
 	.skills-depth{
-		margin-left: 50px;
+		margin: 0 auto;
+		text-align: center;
 	}
 	#quicklinks{
 		width: auto;

@@ -149,7 +149,7 @@ ul li a:active{
 	cursor: pointer;
 }
 #projectsPage {
-	height: 100%;
+	min-height: 100%;
 	color: #e8e9d9;
 	background: #03141f;
 	background-image: url("../img/backgroundProjects.png");

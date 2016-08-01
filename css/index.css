@@ -1,0 +1,399 @@
+﻿/* GENERAL RULES*/
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #333333;
+}
+html *{
+	font-family: 'Montserrat', sans-serif;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+.noselect{
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;		/* Explorer/Edge */
+}
+.shown{
+	top:0 !important;
+}
+.show-btn{
+	opacity: 1 !important;
+}
+.reversed-nav{
+	background: white !important;
+}
+.reversed-nav *{
+		color: black !important;
+}
+.reversed-nav a:hover{
+	color: white !important;
+	background: black !important;
+}
+/* NAVBAR */
+#navbar{
+	height: 60px;
+	width: 100%;
+	background: black;
+	z-index: 99;
+	position: fixed;
+	top: -60px;
+	color: white;
+	transition: top 300ms, background 500ms, color 500ms;
+}
+#logo{
+	display: inline-block;
+    height: 100%;
+	margin-left: 25px;
+    font-size: 50px;
+	cursor: pointer;
+}
+#nav-btns{
+	list-style: none;
+	padding: 0;
+    margin: 0;
+	margin-right: 25px;
+	font-size: 18px;
+	float:right;
+}
+#nav-btns > li{
+	display: inline-block;
+}
+.nav-btn{
+	padding: 19px 10px;
+	color: white;
+}
+.nav-btn:hover{
+	background: white;
+	color: black;
+}
+/* HEADER */
+#header{
+	min-height: 100%;
+	width: 100%;
+	background: black;
+}
+#header *{
+	color: white;
+}
+#section-btns{
+	width: 250px;
+	display: inline-block;
+	padding: 0;
+	margin-top: 100px;
+	margin-left: 150px;
+}
+#section-btns li{
+	list-style: none;
+}
+#section-btns  a{
+	text-align: center;
+	width: 100%;
+	margin: 3px 0;
+	padding: 20px 5px;
+	background: none;
+	border: 4px solid white;
+	font-size: 25px;
+	display: block;
+	opacity: 0;
+	transition: opacity 500ms;
+}
+#section-btns a:hover{
+	background: white;
+	color: black;
+}
+#welcome-text{
+	width: 500px;
+	display: inline-block;
+	text-align: center;
+	margin-left: 500px;
+}
+#welcome-text h1{
+	font-size: 50px;
+}
+#welcome-text p{
+	font-size: 25px;
+}
+/* RENDERJS */
+.toRender{
+	position: relative;
+}
+#renderX, #renderY{
+	background: black;
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+}
+/* ABOUT PAGE */
+#about-me{
+	min-height: 100%;
+	background: white;
+}
+#about-me p{
+	font-size: 25px;
+}
+#me-description{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	vertical-align: top;
+}
+#description{
+	width: 420px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+#me-json{
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+}
+#description-json{
+	display: inline-block;
+    border: 2px dotted black;
+    padding: 15px;
+	margin-top: 100px;
+}
+/* PROJECTS PAGE */
+#projects{
+	background: black;
+	min-height: 100%;
+}
+.long-desc{
+	margin: 0 5px;
+}
+.descriptions{
+	width: inherit;
+	height: inherit;
+	background: black;
+	color: white;
+	position: absolute;
+	text-align: center;
+}
+.descriptions a{
+	height: 64px;
+}
+.technologies{
+	list-style: none;
+	padding: 0;
+}
+.technologies li{
+	display: inline-block;
+	border: 2px solid white;
+	padding: 15px;
+	margin: 0 5px;
+}
+#first-proj, #second-proj, #third-proj{
+	height: 270px;
+	width: 480px;
+	margin: 0 auto;
+	background: white;
+	position: relative;
+	z-index: 10;
+}
+#first-proj{
+	border-top: 80px solid black;
+	transform: translateX(-50%);
+}
+#first-pic{
+	background: url("../img/CodeTogetherIndex.png");	
+}
+#first-description{
+	right: 0;
+	transition: right 500ms;
+}
+#first-proj:hover > #first-pic{
+			filter: none;
+    -webkit-filter: none;
+}
+#first-proj:hover > #first-description{
+	right: -480px;
+}
+#second-proj{
+	transform: translateX(50%);
+}
+#first-pic, #second-pic, #third-pic{
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	z-index: 10;
+	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+#second-pic{
+	background: url("../img/KeepItSolvedIndex.png");
+}
+#second-description{
+	left: 0;
+	transition: left 500ms;
+}
+#second-proj:hover > #second-pic{
+		filter: none;
+    -webkit-filter: none;
+}
+#second-proj:hover > #second-description{
+	left: -480px;
+}
+#third-proj{
+	transform: translateX(-50%);
+}
+#third-pic{
+	background: url("../img/HCDouble.png");	
+}
+#third-description{
+	right: 0;
+	transition: right 500ms;
+}
+#third-proj:hover > #third-pic{
+		filter: none;
+    -webkit-filter: none;
+}
+#third-proj:hover > #third-description{
+	right: -480px;
+}
+.hover-shaker:hover{
+	-webkit-animation-name: shake;
+	animation-name: shake;  
+	-webkit-animation-duration: 0.15s;  
+	animation-duration: 0.15s;  
+	-webkit-animation-timing-function: linear;  
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count:  3;
+	animation-iteration-count: 3;
+}
+@keyframes shake {
+	0%	 {transform: rotate(0);}
+    25%  {transform: rotate(15deg);}
+    75%  {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+}
+/* CONTACT PAGE */
+#contact{
+	text-align: center;
+	background: white;
+	color: black;
+}
+#contact h1{
+	margin-top: 0;
+	padding-top: 120px;
+	font-size: 32px;
+    font-weight: 500;
+}
+#contacts a:hover{
+	-webkit-animation-name: wobble-skew;
+	animation-name: wobble-skew;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+  	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+@keyframes wobble-skew {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+#form{
+	width: 100%;
+	background: #222;
+	margin-top: 150px;
+	padding: 50px 0;
+	padding-bottom: 30px;
+}
+#contact-form{
+	width: 50%;
+	margin: 0 auto;
+	text-align: left;
+}
+#contact-form > label{
+	font-size: 25px;
+	color: #d8d8d8;
+}
+#contact-form *:not(label):not(div){
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	display: block;
+	width: 100%;
+	margin: 5px auto;
+	font-size: 25px;
+	border: 2px solid #555;
+    outline: none;
+    background: none;
+    color: #d8d8d8;
+	padding:8px 10px;
+}
+#contact-form input[type="text"], #contact-form input[type="email"]{
+	width: 100%;
+	display: inline-block;
+}
+.half-input{
+	width: 49%;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+.half-input:nth-child(1){
+	float:left;
+}
+.half-input:nth-child(2){
+	float: right;
+}
+.half-input label{
+	font-size: 25px;
+	color: #d8d8d8;
+}#contact-form input:focus, #contact-form textarea:focus{
+	 outline: 1px solid #ddd;
+ }
+ #contact-form input[type="submit"]{
+	 background: #363636;
+	 color: #fff;
+	 font-weight: 800;
+	 margin-top: 15px;
+	 outline: none;
+	 cursor: pointer;
+	 letter-spacing: 2px;
+ }
+#contact-form input[type="submit"]:hover {
+	background: #111;
+}
+#contact-form input[type="submit"]:active{
+	outline: 2px solid #999;
+}
+ footer{
+	background: #181819;
+    color: white;
+    padding: 10px;
+	font-size: 11px;
+    letter-spacing: 3px;
+ }

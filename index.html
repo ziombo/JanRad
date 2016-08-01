@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="css/index.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+	<div id="navbar" class="noselect">
+		<div id="logo">J.R.</div>
+		<ul id="nav-btns" class="noselect">
+			<li><a href="#about-me" class="nav-btn">About Me</a></li><!--
+		 --><li><a href="#projects" class="nav-btn">Projects</a></li><!--
+		 --><li><a href="#contact" class="nav-btn">Contact</a></li>
+		</ul>
+	</div>
+
+	<div id="header">
+		<ul id="section-btns">
+			<li><a id="about-a" href="#about-me">About Me</a></li>
+			<li><a id="projects-a" href="#projects">Projects</a></li>
+			<li><a id="contact-a" href="#contact">Stay in Touch</a></li>
+		</ul>
+		<div id="welcome-text">
+			<div class="toRender">
+				<h1>Jan Radłowski</h1>
+				<p>Programming enthusiast for whom even sky isn't the limit.</p>
+				<div id="renderY"></div>
+				<div id="renderX"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="about-me">
+		<div id="me-description">
+			<div id="description">
+				<p>As You already know, my name is Jan and I'm 21 years old, aspiring programmer from Poland.</p>
+				<p>Right now I'm focusing on web development, although I plan on diving into data analysis and security in the future.</p>
+			</div>
+		</div><!--
+	 --><div id="me-json">
+			<pre id="description-json"></pre>
+		</div>
+	</div>
+
+	<div id="projects">
+		<div id="first-proj">
+			<div id="first-pic"></div>
+
+			<div id="first-description" class="descriptions">
+				<h2>Code Together</h2>
+				<p>Real-time code editor that allows pair programming.</p>
+				<ul class="technologies">
+					<li>ASP.NET</li>
+					<li>SignalR</li>
+					<li>jQuery</li>
+				</ul>
+				<a class="hover-shaker" href="https://github.com/ziombo/codetogether" target="_blank"><img src="img/GithubLogo.png" /></a>
+			</div>
+		</div>
+		<div id="second-proj">
+			<div id="second-pic"></div>
+
+			<div id="second-description" class="descriptions">
+				<h2>Keep It Solved</h2>
+				<p>Place to keep all Your problems and solutions for them.</p>
+				<ul class="technologies">
+					<li>ASP.NET MVC</li>
+					<li>Entity Framework</li>
+					<li>AngularJS</li>
+				</ul>
+				<a class="hover-shaker" href="https://github.com/ziombo/KISDNU" target="_blank"><img src="img/GithubLogo.png" /></a>
+			</div>
+		</div>
+		<div id="third-proj">
+			<div id="third-pic"></div>
+
+			<div id="third-description" class="descriptions">
+				<h2>HearthChat</h2>
+				<p class="long-desc">Chat app that allows Hearthstone players to talk with their current opponent.</p>
+				<ul class="technologies">
+					<li>C#</li>
+					<li>.NET</li>
+					<li>SignalR</li>
+				</ul>
+				<a class="hover-shaker" href="https://github.com/ziombo/HearthChat" target="_blank"><img src="img/GithubLogo.png" /></a>
+			</div>
+		</div>
+	</div>
+
+	<div id="contact">
+		<h1>Feel free to contact me in whatever way suits You.</h1>
+		<div id="contacts">
+			<a href="mailto:jasiu@360.st"><img src="img/Email.png" /></a>
+			<a href="skype:jj.radlowski?chat"><img src="img/Skype.png" /></a>
+		</div>
+
+		<div id="form">
+			<form id="contact-form" action="https://formspree.io/jasiu@360.st" method="POST">
+				<div class="half-input">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" required>
+				</div>
+				<div class="half-input">
+					<label for="email">E-mail</label>
+					<input type="email" name="_replyto" id="email" required>
+				</div>
+				<label for="message">Message</label>
+				<textarea name="Message" cols="30" rows="6" id="message" required></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</div>
+
+		<footer>Created by Jan Radłowski</footer>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<script src="script/RenderJS.js"></script>
+	<script src="script/index.js"></script>
+</body>
+</html>

@@ -51,7 +51,6 @@
 
 	var myData = {
 		"Name": "Jan Radłowski",
-		"Date of Birth": "05 October 1994",
 		"Skills": {
 			"Languages": ["Polish - native", "English - advanced", "French - basic"],
 			"Computer Languages": ["C#", "JavaScript", "SQL", "HTML", "CSS"],

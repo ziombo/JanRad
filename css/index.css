@@ -113,7 +113,7 @@ a{
 	width: 500px;
 	display: inline-block;
 	text-align: center;
-	margin-left: 500px;
+	margin-left: 30%;
 }
 #welcome-text h1{
 	font-size: 50px;
@@ -157,17 +157,18 @@ a{
 	display: inline-block;
 	width: 50%;
 	vertical-align: top;
+	margin-top: 100px
 }
 #description-json{
 	display: inline-block;
     border: 2px dotted black;
     padding: 15px;
-	margin-top: 100px;
 }
 /* PROJECTS PAGE */
 #projects{
 	background: black;
 	min-height: 100%;
+	padding-top: 80px;
 }
 .long-desc{
 	margin: 0 5px;
@@ -202,7 +203,6 @@ a{
 	z-index: 10;
 }
 #first-proj{
-	border-top: 80px solid black;
 	transform: translateX(-50%);
 }
 #first-pic{
@@ -397,3 +397,51 @@ a{
 	font-size: 11px;
     letter-spacing: 3px;
  }
+
+ @media only screen and (max-width: 1350px){
+	 #about-me{
+		 padding-bottom:30px;
+	 }
+	 #me-description, #me-json{
+		 width: auto;
+		 display: block;
+		 text-align: center;
+	 }
+	 #me-json{
+		 margin-top: 50px;
+	 }
+	 #description{
+		 margin-top: 0;
+		 padding-top: 50px;
+	 }
+	 #description-json{
+		 text-align: left;
+	 }
+	 #projects{
+		 padding-bottom: 50px;
+	 }
+	 #contact-form{
+		 width: 70%;
+	 }
+ }
+@media only screen and (max-width: 980px) {
+	#header, #about-me, #projects{
+		min-height: unset;
+	}
+	#section-btns{
+		display: none;
+	}
+	#welcome-text{
+		width: 100%;
+		margin: 0;
+	}
+	#header{
+		padding: 50px 0;
+	}
+	#nav-btns{
+		 font-size: 30px;
+	}
+	.nav-btn{
+		padding: 12px 20px;
+	}
+}

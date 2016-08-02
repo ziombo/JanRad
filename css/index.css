@@ -398,7 +398,7 @@ a{
     letter-spacing: 3px;
  }
 
- @media only screen and (max-width: 1350px){
+ @media screen and (max-width: 1350px){
 	 #about-me{
 		 padding-bottom:30px;
 	 }
@@ -424,7 +424,7 @@ a{
 		 width: 70%;
 	 }
  }
-@media only screen and (max-width: 980px) {
+@media screen and (max-width: 980px) {
 	#header, #about-me, #projects{
 		min-height: unset;
 	}

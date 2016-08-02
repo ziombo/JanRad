@@ -9,6 +9,9 @@ html, body {
 html *{
 	font-family: 'Montserrat', sans-serif;
 }
+body{
+	overflow-x: hidden;
+}
 a{
 	text-decoration: none;
 	display: inline-block;
@@ -54,6 +57,9 @@ a{
 	margin-left: 25px;
     font-size: 50px;
 	cursor: pointer;
+}
+#logo > p{
+	margin: 0;
 }
 #nav-btns{
 	list-style: none;
@@ -175,7 +181,6 @@ a{
 }
 .descriptions{
 	width: inherit;
-	height: inherit;
 	background: black;
 	color: white;
 	position: absolute;
@@ -201,6 +206,7 @@ a{
 	background: white;
 	position: relative;
 	z-index: 10;
+	background: #000;
 }
 #first-proj{
 	transform: translateX(-50%);
@@ -229,6 +235,9 @@ a{
 	z-index: 10;
 	filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+	background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
 }
 #second-pic{
 	background: url("../img/KeepItSolvedIndex.png");
@@ -428,6 +437,9 @@ a{
 	#header, #about-me, #projects{
 		min-height: unset;
 	}
+	#projects{
+		padding-top: 1px;
+	}
 	#section-btns{
 		display: none;
 	}
@@ -438,10 +450,100 @@ a{
 	#header{
 		padding: 50px 0;
 	}
+	#first-proj, #second-proj, #third-proj{
+		height: 202px;
+		width: 360px;
+	}
+	#first-proj:hover > #first-description{
+		right: -360px;
+	}
+	#second-proj:hover > #second-description{
+		left: -360px;
+	}
+	#third-proj:hover > #third-description{
+		right: -360px;
+	}
+	#first-description, #second-description, #third-description{
+		font-size: 11px;
+		right: -360px;
+	}
+	#second-description{
+		left: -360px;
+	}
+	#first-pic, #second-pic, #third-pic{
+		filter: grayscale(0);
+		-webkit-filter: grayscale(0);
+	}
+	.technologies li {
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 760px) {
+	#description-json{
+		font-size: 12px;
+	}
+	#first-proj, #second-proj, #third-proj{
+		transform: unset;
+		margin-top: 300px;
+	}
+	#first-proj:hover > #first-description{
+		top: -265px;
+		right: 0;
+	}
+	#second-proj:hover > #second-description{
+		left: 50%;
+	}
+	#third-proj:hover > #third-description{
+		right: 0;
+	}
+	#first-description, #second-description, #third-description{
+		font-size: 17px;
+		top: -265px;
+		right: 0px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	#first-pic, #second-pic, #third-pic{
+		filter: grayscale(0);
+		-webkit-filter: grayscale(0);
+	}
+	.descriptions{
+		width: 475px;
+	}
+	.technologies li {
+		padding: 10px;
+	}
+	.half-input {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 460px){
 	#nav-btns{
-		 font-size: 30px;
+		font-size: 14px;
 	}
 	.nav-btn{
-		padding: 12px 20px;
+		padding: 21px 10px;
+	}
+	#logo > p{
+		margin-top: 50%;
+		transform: translateY(-50%);
+		font-size: 32px;
+	}
+	#first-description, #second-description, #third-description {
+		font-size: 12px;
+		top: -230px;
+	}
+	#first-proj:hover > #first-description{
+		top: -230px;
+		right: 0;
+	}
+	#second-proj:hover > #second-description{
+		left: 50%;
+	}
+	#third-proj:hover > #third-description{
+		right: 0;
+	}
+	#contact-form *:not(label):not(div){
+		font-size: 15px;
 	}
 }

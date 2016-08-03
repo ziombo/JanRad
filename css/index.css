@@ -17,6 +17,13 @@ a{
 	display: inline-block;
 	cursor: pointer;
 }
+pre{
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
 .noselect{
 	-webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -156,6 +163,7 @@ a{
 }
 #description{
 	width: 420px;
+	max-width: 90%;
     margin: 0 auto;
     margin-top: 150px;
 }
@@ -437,9 +445,6 @@ a{
 	#header, #about-me, #projects{
 		min-height: unset;
 	}
-	#projects{
-		padding-top: 1px;
-	}
 	#section-btns{
 		display: none;
 	}
@@ -482,6 +487,9 @@ a{
 	#description-json{
 		font-size: 12px;
 	}
+	#projects{
+		padding-top: 1px;
+	}
 	#first-proj, #second-proj, #third-proj{
 		transform: unset;
 		margin-top: 300px;
@@ -518,20 +526,39 @@ a{
 	}
 }
 @media screen and (max-width: 460px){
+	#logo{
+		display: none;
+	}
 	#nav-btns{
+		width: 100%;
 		font-size: 14px;
+		float: unset;
+		margin-right: 0;
+	}
+	#nav-btns > li{
+		width: 33.333333%;
+		text-align: center;
 	}
 	.nav-btn{
-		padding: 21px 10px;
+		padding: 21px 0px;
+		width: 100%;
 	}
 	#logo > p{
 		margin-top: 50%;
 		transform: translateY(-50%);
 		font-size: 32px;
 	}
+	#first-proj, #second-proj, #third-proj {
+		height: 170px;
+		width: 300px;
+	}
 	#first-description, #second-description, #third-description {
 		font-size: 12px;
 		top: -230px;
+		width: inherit;
+	}
+	#second-description{
+		top: -260px;
 	}
 	#first-proj:hover > #first-description{
 		top: -230px;

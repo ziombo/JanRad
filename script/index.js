@@ -64,7 +64,6 @@
 			"Course of Study": "Aeronautics and Space Technology (2013-2014)"
 		}
 	};
-	var myDataString = JSON.stringify(myData, null, 8);
-
+	var myDataString = JSON.stringify(myData, null, 6);
 	$("#description-json").html(myDataString);
 })();

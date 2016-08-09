@@ -111,6 +111,8 @@
 				<label for="message">Message</label>
 				<textarea name="Message" cols="30" rows="6" id="message" required></textarea>
 				<input type="submit" value="Send">
+
+				<div id="sending-status">Sending message...</div>
 			</form>
 		</div>
 
@@ -121,5 +123,28 @@
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 	<script src="script/RenderJS.js"></script>
 	<script src="script/index.js"></script>
+
+	<script>
+		var contactForm = $('#contact-form');
+		var sendStatus = $('#sending-status');
+		contactForm.submit(function (e) {
+			e.preventDefault();
+			$.ajax({
+				url: '//formspree.io/jasiu@360.st',
+				method: 'POST',
+				data: $(this).serialize(),
+				dataType: 'json',
+				beforeSend: function () {
+					sendStatus.css('visibility', 'visible');
+				},
+				success: function (data) {
+					sendStatus.html("Message sent!")
+				},
+				error: function (err) {
+					sendStatus.html("There was an error. Try again.");
+				}
+			});
+		});
+	</script>
 </body>
 </html>
